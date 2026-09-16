@@ -1,0 +1,1 @@
+const fs = require('fs'); const file = 'c:/Users/srira/ChitFunds/src/screens/FundCalculationsScreen.tsx'; let content = fs.readFileSync(file, 'utf8'); content = content.replace(/>\\{showPreview \\? \\'SHARE IMAGE\\' : \\'DOWNLOAD\\'\\}<\\/Text>/, '>\\{showPreview ? \\'DOWNLOAD PDF\\' : \\'DOWNLOAD\\'\\}</Text>'); fs.writeFileSync(file, content, 'utf8');
